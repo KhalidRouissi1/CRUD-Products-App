@@ -1,0 +1,505 @@
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  text-decoration: none;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  /* direction: rtl; */
+  font-family: "Open Sans", sans-serif;
+  background-color: #232123;
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Small */
+@media (min-width: 768px) {
+  .container {
+    width: 750px;
+  }
+}
+/* Medium */
+@media (min-width: 992px) {
+  .container {
+    width: 970px;
+  }
+}
+/* Large */
+@media (min-width: 1200px) {
+  .container {
+    width: 1170px;
+  }
+}
+header {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 0px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+header .title1 {
+  color: #fff;
+}
+header .sub-title {
+  font-size: 19px;
+  font-weight: bold;
+  margin-top: -10px;
+  color: #fff;
+}
+
+form .container .title {
+  margin: 5px auto;
+  padding: 10px 12px;
+  background-color: #121112;
+  width: 100%;
+  border-radius: 10px;
+  border: 0;
+  color: white;
+  outline: none;
+}
+form .container .title::-webkit-input-placeholder {
+  padding: 5px;
+  color: #565456;
+}
+form .container .title::-moz-placeholder {
+  padding: 5px;
+  color: #565456;
+}
+form .container .title:-ms-input-placeholder {
+  padding: 5px;
+  color: #565456;
+}
+form .container .title::-ms-input-placeholder {
+  padding: 5px;
+  color: #565456;
+}
+form .container .title::placeholder {
+  padding: 5px;
+  color: #565456;
+}
+form .container .title .active {
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  padding: 10px 0;
+}
+form .container .title__label {
+  color: #fff;
+}
+form .container .priceCalc {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  gap: 20px;
+}
+form .container .priceCalc .price {
+  margin: 5px auto;
+  padding: 10px 12px;
+  background-color: #121112;
+  width: 100%;
+  border-radius: 10px;
+  border: 0;
+  color: white;
+  outline: none;
+}
+form .container .priceCalc .price::-webkit-input-placeholder {
+  padding: 5px;
+  color: #565456;
+}
+form .container .priceCalc .price::-moz-placeholder {
+  padding: 5px;
+  color: #565456;
+}
+form .container .priceCalc .price:-ms-input-placeholder {
+  padding: 5px;
+  color: #565456;
+}
+form .container .priceCalc .price::-ms-input-placeholder {
+  padding: 5px;
+  color: #565456;
+}
+form .container .priceCalc .price::placeholder {
+  padding: 5px;
+  color: #565456;
+}
+form .container .priceCalc .price .active {
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  padding: 10px 0;
+}
+form .container .priceCalc .price__label {
+  color: #fff;
+}
+form .container .priceCalc .taxes {
+  margin: 5px auto;
+  padding: 10px 12px;
+  background-color: #121112;
+  width: 100%;
+  border-radius: 10px;
+  border: 0;
+  color: white;
+  outline: none;
+}
+form .container .priceCalc .taxes::-webkit-input-placeholder {
+  padding: 5px;
+  color: #565456;
+}
+form .container .priceCalc .taxes::-moz-placeholder {
+  padding: 5px;
+  color: #565456;
+}
+form .container .priceCalc .taxes:-ms-input-placeholder {
+  padding: 5px;
+  color: #565456;
+}
+form .container .priceCalc .taxes::-ms-input-placeholder {
+  padding: 5px;
+  color: #565456;
+}
+form .container .priceCalc .taxes::placeholder {
+  padding: 5px;
+  color: #565456;
+}
+form .container .priceCalc .taxes .active {
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  padding: 10px 0;
+}
+form .container .priceCalc .taxes__label {
+  color: #fff;
+}
+form .container .priceCalc .ads {
+  margin: 5px auto;
+  padding: 10px 12px;
+  background-color: #121112;
+  width: 100%;
+  border-radius: 10px;
+  border: 0;
+  color: white;
+  outline: none;
+}
+form .container .priceCalc .ads::-webkit-input-placeholder {
+  padding: 5px;
+  color: #565456;
+}
+form .container .priceCalc .ads::-moz-placeholder {
+  padding: 5px;
+  color: #565456;
+}
+form .container .priceCalc .ads:-ms-input-placeholder {
+  padding: 5px;
+  color: #565456;
+}
+form .container .priceCalc .ads::-ms-input-placeholder {
+  padding: 5px;
+  color: #565456;
+}
+form .container .priceCalc .ads::placeholder {
+  padding: 5px;
+  color: #565456;
+}
+form .container .priceCalc .ads .active {
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  padding: 10px 0;
+}
+form .container .priceCalc .ads__label {
+  color: #fff;
+}
+form .container .priceCalc .discount {
+  margin: 5px auto;
+  padding: 10px 12px;
+  background-color: #121112;
+  width: 100%;
+  border-radius: 10px;
+  border: 0;
+  color: white;
+  outline: none;
+}
+form .container .priceCalc .discount::-webkit-input-placeholder {
+  padding: 5px;
+  color: #565456;
+}
+form .container .priceCalc .discount::-moz-placeholder {
+  padding: 5px;
+  color: #565456;
+}
+form .container .priceCalc .discount:-ms-input-placeholder {
+  padding: 5px;
+  color: #565456;
+}
+form .container .priceCalc .discount::-ms-input-placeholder {
+  padding: 5px;
+  color: #565456;
+}
+form .container .priceCalc .discount::placeholder {
+  padding: 5px;
+  color: #565456;
+}
+form .container .priceCalc .discount .active {
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  padding: 10px 0;
+}
+form .container .priceCalc .discount__label {
+  color: #fff;
+}
+form .container .priceCalc .total {
+  background-color: #A20C00;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  padding: 0;
+  border-radius: 10px;
+  border: 0;
+  outline: none;
+  color: #fff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+form .container .count {
+  margin: 5px auto;
+  padding: 10px 12px;
+  background-color: #121112;
+  width: 100%;
+  border-radius: 10px;
+  border: 0;
+  color: white;
+  outline: none;
+}
+form .container .count::-webkit-input-placeholder {
+  padding: 5px;
+  color: #565456;
+}
+form .container .count::-moz-placeholder {
+  padding: 5px;
+  color: #565456;
+}
+form .container .count:-ms-input-placeholder {
+  padding: 5px;
+  color: #565456;
+}
+form .container .count::-ms-input-placeholder {
+  padding: 5px;
+  color: #565456;
+}
+form .container .count::placeholder {
+  padding: 5px;
+  color: #565456;
+}
+form .container .count .active {
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  padding: 10px 0;
+}
+form .container .count__label {
+  color: #fff;
+}
+form .container .category {
+  margin: 5px auto;
+  padding: 10px 12px;
+  background-color: #121112;
+  width: 100%;
+  border-radius: 10px;
+  border: 0;
+  color: white;
+  outline: none;
+}
+form .container .category::-webkit-input-placeholder {
+  padding: 5px;
+  color: #565456;
+}
+form .container .category::-moz-placeholder {
+  padding: 5px;
+  color: #565456;
+}
+form .container .category:-ms-input-placeholder {
+  padding: 5px;
+  color: #565456;
+}
+form .container .category::-ms-input-placeholder {
+  padding: 5px;
+  color: #565456;
+}
+form .container .category::placeholder {
+  padding: 5px;
+  color: #565456;
+}
+form .container .category .active {
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  padding: 10px 0;
+}
+form .container .category__label {
+  color: #fff;
+}
+form .container .create-btn {
+  width: 100%;
+  padding: 10px 0px;
+  background-color: #2A0667;
+  color: #fff;
+  border: 1px solid #23035c;
+  border-radius: 50px;
+  margin: 5px auto;
+  cursor: pointer;
+}
+form .container .update-btn {
+  width: 100%;
+  padding: 10px 0px;
+  background-color: #2A0667;
+  color: #fff;
+  border: 1px solid #23035c;
+  border-radius: 50px;
+  margin: 5px auto;
+  cursor: pointer;
+  display: none;
+}
+form .container .deleteAllBtn {
+  width: 100%;
+  padding: 10px 0px;
+  background-color: #2A0667;
+  color: #fff;
+  border: 1px solid #23035c;
+  border-radius: 50px;
+  margin: 5px auto;
+  cursor: pointer;
+}
+
+table {
+  width: 100%;
+  text-align: center;
+  color: white;
+}
+table .nested-Delete-Tab {
+  width: 100%;
+  padding: 10px 0px;
+  background-color: #2A0667;
+  color: #fff;
+  border: 1px solid #23035c;
+  border-radius: 50px;
+  margin: 5px auto;
+  cursor: pointer;
+}
+table .nested-update-Tab {
+  width: 100%;
+  padding: 10px 0px;
+  background-color: #2A0667;
+  color: #fff;
+  border: 1px solid #23035c;
+  border-radius: 50px;
+  margin: 5px auto;
+  cursor: pointer;
+}
+table td {
+  padding: 5px;
+}
+table th {
+  padding: 5px;
+  text-transform: uppercase;
+}
+
+.outputs .search {
+  margin: 5px auto;
+  padding: 10px 12px;
+  background-color: #121112;
+  width: 100%;
+  border-radius: 10px;
+  border: 0;
+  color: white;
+  outline: none;
+}
+.outputs .search::-webkit-input-placeholder {
+  padding: 5px;
+  color: #565456;
+}
+.outputs .search::-moz-placeholder {
+  padding: 5px;
+  color: #565456;
+}
+.outputs .search:-ms-input-placeholder {
+  padding: 5px;
+  color: #565456;
+}
+.outputs .search::-ms-input-placeholder {
+  padding: 5px;
+  color: #565456;
+}
+.outputs .search::placeholder {
+  padding: 5px;
+  color: #565456;
+}
+.outputs .search .active {
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  padding: 10px 0;
+}
+.outputs .search__label {
+  color: #fff;
+}
+.outputs .searchBtn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.outputs .searchBtn .search-title {
+  width: 30%;
+  padding: 10px 0px;
+  background-color: #2A0667;
+  color: #fff;
+  border: 1px solid #23035c;
+  border-radius: 50px;
+  margin: 5px auto;
+  cursor: pointer;
+}
+.outputs .searchBtn .search-category {
+  width: 30%;
+  padding: 10px 0px;
+  background-color: #2A0667;
+  color: #fff;
+  border: 1px solid #23035c;
+  border-radius: 50px;
+  margin: 5px auto;
+  cursor: pointer;
+}

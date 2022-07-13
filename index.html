@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cruds</title>
+    <link rel="stylesheet" href="style/style.css">
+</head>
+<body>
+    <header>
+        <h1 class="title1">CRUDS</h1>
+        <div class="sub-title">
+            <span>Creat</span>
+            <span>Read</span>
+            <span>Update</span>
+            <span>Delete</span>
+            <span>Search</span>
+        </div>
+    </header>
+    <form action="">
+
+        <div class="container">
+            <input type="text"  placeholder="Title" class="title">
+            <div class="priceCalc">
+                <input type="text"  class="price" placeholder="Price">
+                <input type="text" class="taxes" placeholder="Taxes">
+                <input type="text"  class="ads" placeholder="Ads">
+                <input type="text"  class="discount" placeholder="Discount">
+                <div class="total">
+                    <span>Total:</span>
+                <span type="text" disabled class="totalValue" ></span>
+
+                </div>
+            </div>
+            <input type="text"  placeholder="Count" class="count">
+
+            <input type="text"  placeholder="Category" class="category">
+            <input type="button"  class="update-btn" value="Update">
+
+            <input type="button"  class="create-btn" value="Create">
+         
+        </div>
+
+        <div class="outputs">
+            <div class="container">
+                <input type="text" placeholder="Search" class="search">
+            <div class="searchBtn">
+                <input type="button" value="Search By Title" id="search-title"  class="search-title" onclick="getMood(this.id)">
+                <input type="button" value="Search By Category" id="search-category" class="search-category" onclick="getMood(this.id)">
+            </div>
+            <input type="button" value="Delete All" class="deleteAllBtn">
+            </div>
+        </div>
+        
+        
+    </form>
+   <div class="container">
+    <table>
+        <tr>
+            <th>Id</th>
+            <th>Title</th>
+            <th>Price</th>
+            <th>Taxes</th>
+            <th>Ads</th>
+            <th>Discount</th>
+            <th>Total</th>
+            <th>Category</th>
+            <th>Update</th>
+            <th>Delete</th>
+        </tr>
+
+        <tbody class="tBody">
+            <!-- <td>
+                1
+            </td>
+            <td>
+                Samsaung g20
+            </td>
+            <td>
+                2000
+            </td>
+            <td>52</td>
+            <td>125</td>
+            <td>45</td>
+            <td>2132</td>
+            <td>phone</td>
+            <td><button class="nested-update-Tab">Update</button></td>
+            <td><button class="nested-Delete-Tab">Delete</button></td> -->
+            
+        </tbody>
+
+
+
+
+
+    </table>
+   </div>
+   <script src="script.js"></script>
+</body>
+</html>

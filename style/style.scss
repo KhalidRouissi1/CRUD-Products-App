@@ -1,0 +1,190 @@
+// Import side 
+
+@use "./helpers/colors" as *;
+@use  "./helpers/mixins" as *;
+
+
+//Gloabal Side 
+*{
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    text-decoration: none;
+  
+  }
+  html{
+    scroll-behavior: smooth;
+}
+
+body{
+  /* direction: rtl; */
+    font-family: 'Open Sans', sans-serif;
+    background-color: $bgColor;
+} 
+
+
+ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  /* Small */
+  @media (min-width: 768px) {
+    .container {
+      width: 750px;
+    }
+  }
+  /* Medium */
+  @media (min-width: 992px) {
+    .container {
+      width: 970px;
+    }
+  }
+  /* Large */
+  @media (min-width: 1200px) {
+    .container {
+      width: 1170px;
+    }
+  }
+
+
+
+
+
+  header{
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      gap: 0px;
+      align-items: center;
+      .title1{
+            color: #fff;
+          
+      }
+      .sub-title{
+          font-size: 19px;
+          font-weight: bold;
+          margin-top: -10px;
+          color: #fff;
+      }
+    
+  }
+
+
+  form{
+    .container{
+
+      .title{
+        @include formArea(100%)
+      }
+      .priceCalc{
+        width: 100%;
+        display: flex ;
+        justify-content: space-between;
+        gap: 20px;
+
+        .price{
+          @include formArea(100%)
+
+        }
+        .taxes{
+          @include formArea(100%)
+
+        }
+        .ads{
+          @include formArea(100%)
+
+        }
+        .discount{
+          @include formArea(100%)
+
+        }
+        .total{
+          background-color:#A20C00;
+          width: fit-content;
+          padding: 0;
+          border-radius: 10px;
+          border:0;
+          outline: none;
+          color: $textColor;
+          display: flex;
+          flex-direction: row;
+          align-items: center;
+     
+        }
+      }
+      .count{
+        @include formArea(100%)
+
+      }
+      .category{
+        @include formArea(100%)
+
+      }
+      .create-btn{
+        @include btn(100%)
+      }
+      .update-btn{
+        @include btn(100%);
+        display:none;
+      }
+      
+      .deleteAllBtn{
+        @include btn(100%)
+      }
+    }
+  }
+
+
+
+  table{
+    width: 100%;
+    text-align: center;
+    color: white;
+    .nested-Delete-Tab{
+      @include btn(100%)
+    }
+    .nested-update-Tab{
+      @include btn(100%)
+    }
+    td{
+      padding: 5px;
+
+     }
+    th{
+ 
+       padding: 5px;
+
+  
+      text-transform: uppercase;
+
+    }
+
+  }
+
+  .outputs{
+    .search{
+      @include formArea(100%)
+
+    }
+    .searchBtn{
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      .search-title{
+        @include btn(30%)
+      }
+      .search-category{
+        @include btn(30%)
+      }
+    }
+  }
+
+  

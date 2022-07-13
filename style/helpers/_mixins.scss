@@ -1,0 +1,34 @@
+@use 'colors'as *;
+
+@mixin btn($width){
+    width: $width;
+    padding: 10px 0px;
+    background-color: $btnColor;
+    color: $textColor;
+    border: 1px solid #23035c;
+    border-radius: 50px;
+    margin: 5px auto;
+    cursor: pointer;
+}
+@mixin formArea($width) {
+    margin: 5px auto;
+    padding: 10px 12px;
+    background-color: #121112;
+    width: $width ;
+    border-radius: 10px;
+    border:0;
+    color: white;
+   outline: none;
+    &::placeholder{
+        padding: 5px;
+        color: #565456;
+    }
+    .active {
+        transition: 0.3s;
+        padding : 10px 0;
+    }
+    &__label{
+        color: $textColor;
+    }
+}
+
